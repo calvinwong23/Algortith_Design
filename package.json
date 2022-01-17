@@ -1,0 +1,19 @@
+{
+  "name": "algortith_design",
+  "version": "1.0.0",
+  "description": "Algorithm design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calvinwong23/Algortith_Design.git"
+  },
+  "author": "Calvin Wong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calvinwong23/Algortith_Design/issues"
+  },
+  "homepage": "https://github.com/calvinwong23/Algortith_Design#readme"
+}
