@@ -10,24 +10,22 @@ class matrixMultiplication(object):
             l = []
 
 
-        for i in range(0, len(result)):
-            for j in range(0, len(result[0])):
+        for i in range(0, len(listA)):
+            for j in range(0, len(listB[0])):
                 result[i][j] = 0
-                for k in range(0, len(listA)):
-                    print(i, j, listA[i][k], listB[k][j])
-  
-                    result[i][j] = result[i][j] + listA[i][k] * listB[k][j]
+                for k in range(0, len(listB)):
+                    result[i][j] += listA[i][k] * listB[k][j]
 
         return result
 
 A_list = [
     [1,2],
-    [3,4]
+    [3,4],
 ]
 
 B_list = [
     [1,3],
-    [2,5]
+    [2,5],
 ]
 
 m = matrixMultiplication()
