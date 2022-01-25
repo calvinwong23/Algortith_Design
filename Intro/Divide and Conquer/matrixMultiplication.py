@@ -1,17 +1,34 @@
 class matrixMultiplication(object):
     def nestedLoop(self, listA, listB):
-        
-        return 0
+        l = []
+        result = []
+
+        for i in range(0, len(listA)):
+            for j in range(0, len(listA)):
+                l.append(0)
+            result.append(l)
+            l = []
+
+
+        for i in range(0, len(result)):
+            for j in range(0, len(result[0])):
+                result[i][j] = 0
+                for k in range(0, len(listA)):
+                    print(i, j, listA[i][k], listB[k][j])
+  
+                    result[i][j] = result[i][j] + listA[i][k] * listB[k][j]
+
+        return result
 
 A_list = [
-    [1,3],
-    [5,7]
+    [1,2],
+    [3,4]
 ]
 
 B_list = [
-    [2,4],
-    [6,8]
+    [1,3],
+    [2,5]
 ]
 
 m = matrixMultiplication()
-print(m.nestedLoop(A_list, B_list))
+print(m.nestedLoop(A_list, B_list)) #Output: [ [5, 13], [11, 29] ]
